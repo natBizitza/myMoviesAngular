@@ -1,10 +1,12 @@
-<h2>My Movies</h2>
-<ul class="movies">
-  <li *ngFor="let movie of movies" 
-    (click)="onSelect(movie)" 
-    [class.selected]="movie === selectedMovie">
-    <span class="badge">{{movie.id}}</span> {{movie.name}}
-  </li>
-</ul>
+<h3>All Movies</h3>
+<div class="grid grid-pad">
+    <a *ngFor="let movie of movies"
+      class="col-1-4"  
+      routerLink="/detail/{{movie.id}}">
+      <div class="module movie">
+        <span class="badge"></span> {{movie.name}}
+      </div>
+    </a>
+  </div>
 
-<app-movie-detail [movie]="selectedMovie"></app-movie-detail>
+
