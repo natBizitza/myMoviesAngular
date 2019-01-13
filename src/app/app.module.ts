@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
 
 import { AppComponent } from './app.component';
 import { MoviesComponent } from './movies/movies.component';
@@ -22,6 +23,7 @@ import { FavComponent } from './fav/fav.component';
   ],
   imports: [
     BrowserModule,
+    NgxPaginationModule, // <-- include it in your app module
     FormsModule,
     AppRoutingModule,
     HttpClientModule,

@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: 'detail/:id', component: MovieDetailComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'fav', component: FavComponent }
+  { path: 'fav', component: FavComponent },
+  //{ path: '/movies?page=:npage&records=:n'}
 ];
 
 @NgModule({

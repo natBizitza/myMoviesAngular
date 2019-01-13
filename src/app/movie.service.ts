@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Movie } from './movie';
-import { MOVIES } from './mock-movies';
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
