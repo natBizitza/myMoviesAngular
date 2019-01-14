@@ -21,3 +21,11 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
   }
   
+ul.ngx-pagination {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+ul.ngx-pagination li.current {
+  background-color: #607d8b;
+}
