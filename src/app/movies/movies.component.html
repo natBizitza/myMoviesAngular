@@ -1,6 +1,6 @@
 <h3>All Movies</h3>
 <div class="grid grid-pad">
-    <a *ngFor="let movie of movies | paginate: { itemsPerPage: 8, currentPage: p }"
+    <a *ngFor="let movie of movies | paginate: { itemsPerPage: 8, currentPage: this.p, totalItems: movies.count }"
       class="col-1-4"  
       routerLink="/detail/{{movie.id}}">
       <div class="module movie">
@@ -10,3 +10,4 @@
 </div>
 
 <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
